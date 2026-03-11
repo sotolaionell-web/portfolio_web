@@ -339,3 +339,49 @@ body {
     opacity: 1;
     transform: translateY(0);
 }
+
+@media (max-width: 768px) {
+    .container {
+        padding: 0 24px;
+    }
+
+    .nav {
+        gap: 24px;
+    }
+
+    .nav-link {
+        font-size: 0.7rem;
+    }
+
+    .hero-inner {
+        padding: 80px 24px;
+    }
+
+    .skills-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .books-grid {
+        grid-template-columns: 1fr;
+        max-width: 400px;
+    }
+
+    .footer-inner {
+        flex-direction: column;
+        gap: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .nav {
+        gap: 16px;
+    }
+
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .skill-card {
+        padding: 32px 24px;
+    }
+}
