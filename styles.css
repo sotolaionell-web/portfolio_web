@@ -231,3 +231,68 @@ body {
     line-height: 1.7;
     font-weight: 400;
 }
+
+.books {
+    padding: 120px 0;
+    border-top: 1px solid var(--border);
+}
+
+.books-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+}
+
+.book-card {
+    border: 1px solid var(--border);
+    overflow: hidden;
+    transition: border-color 0.4s ease, transform 0.4s ease;
+}
+
+.book-card:hover {
+    border-color: var(--accent);
+    transform: translateY(-6px);
+}
+
+.book-cover-wrapper {
+    overflow: hidden;
+    aspect-ratio: 3/4;
+}
+
+.book-cover {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.6s ease;
+}
+
+.book-card:hover .book-cover {
+    transform: scale(1.05);
+}
+
+.book-info {
+    padding: 28px 24px;
+}
+
+.book-title {
+    font-family: var(--font-display);
+    font-size: 1.3rem;
+    font-weight: 500;
+    margin-bottom: 4px;
+}
+
+.book-author {
+    font-size: 0.8rem;
+    color: var(--accent);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-bottom: 16px;
+    font-weight: 500;
+}
+
+.book-summary {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    line-height: 1.7;
+}
